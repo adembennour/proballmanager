@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../Downloads/bg.avif</file>
+        <file>../../Desktop/src++/bg.jpg</file>
+        <file>../../Downloads/logo.png</file>
+    </qresource>
+</RCC>

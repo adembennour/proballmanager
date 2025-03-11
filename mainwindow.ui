@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1853</width>
+    <height>1279</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="login_page">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="bg_login">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="src.qrc">:/Desktop/src++/bg.jpg</pixmap>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>380</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Veuillez entrer votre identifiant</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>450</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Veuillez entrer votre mot de passe</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>360</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+</string>
+     </property>
+     <property name="text">
+      <string>Adresse Mail :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>430</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+</string>
+     </property>
+     <property name="text">
+      <string>Mot de Passe :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="login_button">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>670</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Se connecter</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>700</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+</string>
+     </property>
+     <property name="text">
+      <string>Mot de passe oublié?</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="mdpoubli">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>700</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>100</y>
+       <width>1231</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+font: 32pt &quot;Segoe UI&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>WELCOME TO PROBALL MANGER </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>1600</x>
+       <y>10</y>
+       <width>191</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="src.qrc">:/Downloads/logo.png</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="signup_page">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="bg_signup">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="src.qrc">:/Desktop/src++/bg.jpg</pixmap>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mail_employe">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>373</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Veuillez saisir l'adresse mail</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="nom_employe">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>303</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Veuillez saisir le nom</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="prenom_employe">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>243</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Veuillez saisir le prénom</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mdp_employe">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>443</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Créer le mot de passe</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mdp_2_employe">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>513</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Confirmer le mot de passe</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="date_employe">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>243</y>
+       <width>221</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="sexe_employe">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>303</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Entrez le sexe</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Homme</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Femme</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Autre</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="salaire_employe">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>373</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Veuillez saisir le salaire</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="poste_employe">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>443</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Entrez le poste</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ressources Humaines</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Chef des matches</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Chef des stades</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Coach </string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="inserer_image">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>513</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Insérez une photo</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_image">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>60</y>
+       <width>111</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ajouter_employe">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>680</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>AJOUTER</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="modifier_employe">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>730</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MODIFIER</string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableView_employe">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>210</y>
+       <width>1061</width>
+       <height>361</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_3">
+     <property name="geometry">
+      <rect>
+       <x>1470</x>
+       <y>170</y>
+       <width>72</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>----</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Nom</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Prénom</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Poste</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>1560</x>
+       <y>170</y>
+       <width>211</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Recherche...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>1419</x>
+       <y>170</y>
+       <width>41</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Trier</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>1579</x>
+       <y>580</y>
+       <width>191</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Exportation PDF</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_4">
+     <property name="geometry">
+      <rect>
+       <x>1331</x>
+       <y>170</y>
+       <width>81</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>ascendant</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>descendant</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="retour_menu">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>940</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Retour</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="image_path_employe">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>550</y>
+       <width>221</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Veuillez saisir le salaire</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>1600</x>
+       <y>10</y>
+       <width>191</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="src.qrc">:/Downloads/logo.png</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="mdpoublie_page">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="src.qrc">:/Desktop/src++/bg.jpg</pixmap>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mailoublie">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>220</y>
+       <width>351</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Entrez votre adresse mail...</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>871</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 9pt &quot;Segoe UI&quot;;
+color: white;
+font: 600 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Veuillez entrer votre adresse mail et attendez quelques secondes pour reçevoir un code de vérification</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>270</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Confirmer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="retour_login">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>670</y>
+       <width>231</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Retour à la page d'acceuil</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>1600</x>
+       <y>10</y>
+       <width>191</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="src.qrc">:/Downloads/logo.png</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="menu_page">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1920</width>
+       <height>1080</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="src.qrc">:/Desktop/src++/bg.jpg</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>150</y>
+       <width>411</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+font: 600 16pt &quot;Segoe UI&quot;;
+font: 12pt &quot;Segoe UI&quot;;
+font: 22pt &quot;Segoe UI&quot;;
+font: 700 22pt &quot;Segoe UI&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>CHOISISSEZ VOTRE ACTION</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>460</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gestion des joueurs</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>390</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gestion des matches</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="aller_gestion_employe">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>330</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gestion des employés</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>530</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gestion des stades</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>590</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gestion des performances</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>1600</x>
+       <y>10</y>
+       <width>191</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="src.qrc">:/Downloads/logo.png</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <zorder>menu_page</zorder>
+   <zorder>login_page</zorder>
+   <zorder>mdpoublie_page</zorder>
+   <zorder>signup_page</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1853</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>
