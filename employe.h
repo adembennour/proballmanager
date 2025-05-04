@@ -50,7 +50,14 @@ public:
     bool ajouter();
     bool modifier();
     int chercher_IDbyEmail(QString email);
+    bool supprimer(int id);
 
+
+    QSqlQueryModel * chercher(QString choix,QString text);
+    QSqlQueryModel * tri(QString choix,QString ordre);
+
+    int countPoste(const QString& poste);
+    QString chercher_PathByEmail(QString email);
 
 
 private:

@@ -212,10 +212,96 @@ int employe::chercher_IDbyEmail(QString email)
     if (query.exec()&&query.next())
     {
         int ID=query.value(0).toInt();
-        qDebug()<<ID<<Qt::endl;
 
         return ID;
     }
     return 0;
+
+}
+
+bool employe::supprimer(int id)
+{
+    QSqlQuery query;
+    query.prepare("DELETE  FROM EMPLOYE WHERE ID_EMPLOYE=:id");
+    query.bindValue(":id",id);
+    return query.exec();
+
+}
+
+
+QSqlQueryModel * employe::tri(QString choix,QString ordre)
+{
+
+    QSqlQueryModel* model=new QSqlQueryModel();
+    model->setQuery("SELECT NOM_EMPLOYE,PRENOM_EMPLOYE,DATE_EMBAUCHE_EMPLOYE,SEXE_EMPLOYE,SALAIRE_EMPLOYE,POSTE_EMPLOYE,EMAIL_EMPLOYE FROM EMPLOYE ORDER BY "+choix+" "+ordre);
+
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Nom"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("Prenom"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("Date Embauche"));
+    model->setHeaderData(3,Qt::Horizontal,QObject::tr("Sexe"));
+    model->setHeaderData(4,Qt::Horizontal,QObject::tr("Salaire"));
+    model->setHeaderData(5,Qt::Horizontal,QObject::tr("Poste"));
+    model->setHeaderData(6,Qt::Horizontal,QObject::tr("Adresse Mail"));
+
+
+
+
+    return model;
+
+
+
+
+}
+
+QSqlQueryModel * employe::chercher(QString choix,QString text)
+{
+
+    QSqlQueryModel* model=new QSqlQueryModel();
+    model->setQuery("SELECT NOM_EMPLOYE,PRENOM_EMPLOYE,DATE_EMBAUCHE_EMPLOYE,SEXE_EMPLOYE,SALAIRE_EMPLOYE,POSTE_EMPLOYE,EMAIL_EMPLOYE FROM EMPLOYE WHERE "+choix+" LIKE '%"+text+"%'");
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Nom"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("Prenom"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("Date Embauche"));
+    model->setHeaderData(3,Qt::Horizontal,QObject::tr("Sexe"));
+    model->setHeaderData(4,Qt::Horizontal,QObject::tr("Salaire"));
+    model->setHeaderData(5,Qt::Horizontal,QObject::tr("Poste"));
+    model->setHeaderData(6,Qt::Horizontal,QObject::tr("Adresse Mail"));
+
+
+
+
+    return model;
+
+
+
+
+}
+
+int employe::countPoste(const QString& poste)
+{
+    int count = 0;
+
+    QSqlQuery query;
+    query.prepare("SELECT COUNT(POSTE_EMPLOYE) FROM EMPLOYE WHERE POSTE_EMPLOYE = :poste");
+    query.bindValue(":poste", poste);
+
+    if (query.exec() && query.next()) {
+        count = query.value(0).toInt();
+    }
+
+    return count;
+}
+
+QString employe::chercher_PathByEmail(QString email)
+{
+    QSqlQuery query;
+    query.prepare("SELECT IMG_EMPLOYE FROM EMPLOYE WHERE EMAIL_EMPLOYE=:email");
+    query.bindValue(":email",email);
+    if (query.exec()&&query.next())
+    {
+        QString path=query.value(0).toString();
+
+        return path;
+    }
+    return "";
 
 }
